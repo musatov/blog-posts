@@ -26,7 +26,7 @@ export class SingleControlComponent {
 ```
 
 Running this sample we gonna see similar result at the browser
-![Sample control](https://thepracticaldev.s3.amazonaws.com/i/2gxmi03rmharha5flzeu.png)
+![Sample control](img/1.png)
 
 ### Add some synchronous validation to the FormControl.
 
@@ -53,7 +53,7 @@ As the next step we need handle validation results at the control markup. FormCo
 ```
 
 After this changes our control should work like at the following record
-![Alt Text](https://thepracticaldev.s3.amazonaws.com/i/e2wy76tecui2ygj610fo.gif)
+![Alt Text](img/2.gif)
 
 ### Implement asynchronous validator.
 
@@ -96,7 +96,7 @@ Handling vlidators result at the component markup by adding the following elemen
 _Note: Error message from the validator is shown at the UI by using `getError` method. It can be helpfull if async validator return specific error message (received from the server for example)._
 
 Results of all our changes are gonna be like at the record belove
-![The Results](https://thepracticaldev.s3.amazonaws.com/i/blhzn7h0oflvn603jhwd.gif)
+![The Results](img/3.gif)
 
 ### Validators execution order
 
