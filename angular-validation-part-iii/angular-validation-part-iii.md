@@ -44,7 +44,7 @@ It contains a single `FormControl` with Async Validator function emulating usern
 ```
 
 After running this code we gonna see the following:
-![UI updated after focus change](https://dev-to-uploads.s3.amazonaws.com/i/usmemkgddgo5x7cwx46n.gif)
+![UI updated after focus change](img/1.gif)
 What is going on here? Let's split it into stages
 
 1. User typing a valid value 'test' and then put the focus away from the filed (_NOTE: updateOn: 'blur' is used to prevent multiple validations calls_) after that he or she sees the message at the console notifying about started validation and then about completion without errors. So good so far.
@@ -62,7 +62,7 @@ constructor(cd: ChangeDetectorRef) {
 ```
 
 Now everything works as expected
-![UI updated automatically](https://dev-to-uploads.s3.amazonaws.com/i/olmlii06rd28f68nwfjw.gif)
+![UI updated automatically](img/2.gif)
 
 ### II. Async Validators start simultaneously on parent and child
 
@@ -118,7 +118,7 @@ Markup for this component:
 ```
 
 Let's take a look at what we have got during the execution of this little demo
-![Form editing and validation](https://dev-to-uploads.s3.amazonaws.com/i/9wtx8y9d7zv0pbbu5zn8.gif)
+![Form editing and validation](img/3.gif)
 
 1. The form has single sync validator (`Validators.required`) on the 'username' FormControl. In the beginning, the form is in 'INVALID' state and no async validators are running or executed.
 2. The user types a value into the username field then puts focus away from it (the form has updateOn: 'blur' option set), after that the sync validator had been executed and the result is valid. Then async validator of the FormGroup starts executing and FormGroup status becomes `PENDING` and the validator is `STARTED`
@@ -145,7 +145,7 @@ export class ParentChildStatusComponent {
 ```
 
 Let's take a look at what we have at the UI after this little improvement of the form validation.
-![Form editing and validation](https://dev-to-uploads.s3.amazonaws.com/i/ui02evbio0kz60aniiaw.gif)
+![Form editing and validation](img/4.gif)
 Everything looks similar but we definitely have a problem!
 
 1. In the beginning, the form is in `INVALID` state and no async validators are running or executed.
@@ -179,7 +179,7 @@ And now we expect `passwordAlreadyUsed` being executed only after all sync valid
 > It is important to note that the asynchronous validation happens after the synchronous validation, and is performed only if the synchronous validation is successful. This check allows forms to avoid potentially expensive async validation processes such as an HTTP request if more basic validation methods fail.
 
 But form validation going a different way.
-![Unexpected async validation](https://dev-to-uploads.s3.amazonaws.com/i/8s7lk4g5aa6lw11a9puv.gif)
+![Unexpected async validation](img/5.gif)
 From is going through the following stages:
 
 1. The form at the `INVALID` state and no async validators are running or executed
@@ -193,5 +193,5 @@ After the user fills the form and all validations completed the resulting form s
 Thanks for reading. I hope it helped you and save some time on trying to get Angular's forms working as you expected but not as they actually work. All code samples are available at the [Github](https://github.com/musatov/angular-samples/tree/master/form-validators).
 
 Links to the previous articles:
-[Angular forms validation. Part I. Single control validation.](https://dev.to/musatov/angular-forms-validation-part-i-single-control-validation-49op)
-[Angular forms validation. Part II. FormGroup validation.](https://dev.to/musatov/angular-forms-validation-part-ii-formgroup-validation-3g68)
+[Angular forms validation. Part I. Single control validation.](../angular-validation-part-i)
+[Angular forms validation. Part II. FormGroup validation.](../angular-validation-part-ii)

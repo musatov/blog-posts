@@ -51,7 +51,7 @@ Html markup with Angular bindings
 ```
 
 This code should show work similar to the giff provided below
-![Sample form with basic validation](https://dev-to-uploads.s3.amazonaws.com/i/g0lwf8egmzklkgw7rrh3.gif)
+![Sample form with basic validation](img/1.gif)
 
 Everything works pretty well. Thank you, Angular! But we still missing some important features. For instance, we are not checking for password and confirmation match. Let's fix it.
 
@@ -98,7 +98,7 @@ And validation results should be handled at the markup
 ```
 
 Here we can see the result of our improvements.
-![Form validation with password match check](https://dev-to-uploads.s3.amazonaws.com/i/uk8eyhouomn6k2b928i6.gif)
+![Form validation with password match check](img/2.gif)
 It's already better and good enough for most cases. But some time we need to check our form validation by comparing with server-side data for example. Here the async validators come.
 
 ### FormGroup Async Validator
@@ -152,7 +152,7 @@ And use validation result at the markup. Also it would be good to somehow show a
 ```
 
 Let's see what we've got at the UI after making this changes.
-![Form validation with password used check](https://dev-to-uploads.s3.amazonaws.com/i/yb8hwqzindfguzi0e4fa.gif)
+![Form validation with password used check](img/3.gif)
 That is almost evrything can be done on such simple form validation. But some time we need to highlight fields in which changes should be made to fix FormGroup validation errors
 
 ### Highlight FormGroup validation errors on the controls.
@@ -242,12 +242,12 @@ No changes required at the form declaration, but we need to handle 'password-pre
 ```
 
 Let's see how our complete validation works at the UI.
-![FormGroup complete validation](https://dev-to-uploads.s3.amazonaws.com/i/j2f0we8zhy7wx6gco1e7.gif)
+![FormGroup complete validation](img/4.gif)
 
 ### Conclusion
 
 Thank you! I hope you enjoyed the reading and found this information useful. All code samples are available at the [Github](https://github.com/musatov/angular-samples/tree/master/form-validators).
 
 There are two other articles available on the topic:
-[Angular forms validation. Part I. Single control validation.](https://dev.to/musatov/angular-forms-validation-part-i-single-control-validation-49op)
-[Angular forms validation. Part III. Async Validators gotchas.](https://dev.to/musatov/angular-forms-validation-part-iii-async-validators-gotchas-5c0o)
+[Angular forms validation. Part I. Single control validation.](../angular-validation-part-i)
+[Angular forms validation. Part III. Async Validators gotchas.](../angular-validation-part-iii)
