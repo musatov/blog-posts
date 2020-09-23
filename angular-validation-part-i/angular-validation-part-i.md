@@ -159,5 +159,5 @@ First two lines are gonna be printed the same order no matter of internal async 
 Thanks for reading. I hope it helped you in some way. All code samples are available at the [Github](https://github.com/musatov/angular-samples/tree/master/form-validators).
 
 There are two other articles available on the topic:
-[Angular forms validation. Part II. FormGroup validation.](../angular-validation-part-ii)
-[Angular forms validation. Part III. Async Validators gotchas.](../angular-validation-part-iii)
+[Angular forms validation. Part II. FormGroup validation.](./angular-validation-part-ii)
+[Angular forms validation. Part III. Async Validators gotchas.](./angular-validation-part-iii)

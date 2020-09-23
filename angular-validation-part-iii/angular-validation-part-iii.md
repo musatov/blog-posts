@@ -193,5 +193,5 @@ After the user fills the form and all validations completed the resulting form s
 Thanks for reading. I hope it helped you and save some time on trying to get Angular's forms working as you expected but not as they actually work. All code samples are available at the [Github](https://github.com/musatov/angular-samples/tree/master/form-validators).
 
 Links to the previous articles:
-[Angular forms validation. Part I. Single control validation.](../angular-validation-part-i)
-[Angular forms validation. Part II. FormGroup validation.](../angular-validation-part-ii)
+[Angular forms validation. Part I. Single control validation.](./angular-validation-part-i)
+[Angular forms validation. Part II. FormGroup validation.](./angular-validation-part-ii)

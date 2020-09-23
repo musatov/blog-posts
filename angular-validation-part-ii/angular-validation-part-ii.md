@@ -6,7 +6,7 @@ date: 2020-02-05
 
 ## Angular forms validation. Part II. FormGroup validation.
 
-Recently I've started writing down some experience report on Angular development, validation topic in particular. The first part can be found [here](../angular-validation-part-i). I'm going to continue writing on it and today let's talk a little bit on FormGroup validation and validation of the dependent controls.
+Recently I've started writing down some experience report on Angular development, validation topic in particular. The first part can be found [here](./angular-validation-part-i). I'm going to continue writing on it and today let's talk a little bit on FormGroup validation and validation of the dependent controls.
 
 ### The Password Confirmation Form example
 
@@ -249,5 +249,5 @@ Let's see how our complete validation works at the UI.
 Thank you! I hope you enjoyed the reading and found this information useful. All code samples are available at the [Github](https://github.com/musatov/angular-samples/tree/master/form-validators).
 
 There are two other articles available on the topic:
-[Angular forms validation. Part I. Single control validation.](../angular-validation-part-i)
-[Angular forms validation. Part III. Async Validators gotchas.](../angular-validation-part-iii)
+[Angular forms validation. Part I. Single control validation.](./angular-validation-part-i)
+[Angular forms validation. Part III. Async Validators gotchas.](./angular-validation-part-iii)
